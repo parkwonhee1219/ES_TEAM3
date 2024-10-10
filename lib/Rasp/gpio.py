@@ -149,4 +149,5 @@ try:
         time.sleep(2)
 
 except KeyboardInterrupt:
+    db.db_sensors.close()
     print("Goodbye, Have a nice day!")

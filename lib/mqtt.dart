@@ -80,14 +80,8 @@ class Mqtt {
         humidity = parts[5]; // humidity 값
         touch = parts[7]; // touch 값
 
-        // // LED 상태 업데이트
-        // RedLed = parts[8] == '1'; // redLed 값이 '1'이면 true, 아니면 false
-        // YellowLed = parts[9] == '1'; // yellowLed 값이 '1'이면 true, 아니면 false
-        // GreenLed = parts[10] == '1'; // greenLed 값이 '1'이면 true, 아니면 false
-
         print(
             'Distance: $distance, Temperature: $temperature, Humidity: $humidity, Touch: $touch');
-        // print('Red LED: $RedLed, Yellow LED: $YellowLed, Green LED: $GreenLed');
       } else {
         print('Received unexpected message format: $payload');
       }
